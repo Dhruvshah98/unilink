@@ -1057,7 +1057,7 @@ hr {
 .button {
   font-family: "Ruberoid";
   background: #000;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   line-height: 27px;
   color: #ffffff;
@@ -1065,19 +1065,22 @@ hr {
   outline: none;
   border: 1px solid transparent;
   color: #ffffff;
-  // display: inline-block;
-  // width: fit-content;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 60px;
   line-height: 50px;
   padding: 0 36px;
-  border-radius: 8px;
-  font-size: 16px;
   text-align: center;
   border-radius: 0;
   .anim();
+
+  &.big {
+    height: 96px;
+    img {
+      margin-left: 24px;
+    }
+  }
 
   &:hover {
     background: transparent;
@@ -1087,12 +1090,12 @@ hr {
 
   &.line {
     background: transparent;
-    border: 1px solid var(--button-line);
-    color: var(--button-line);
+    border: 1px solid #000;
+    color: #000;
 
     &:hover {
-      background: var(--button-line);
-      border: 1px solid var(--button-line);
+      background: #000;
+      border: 1px solid #000;
       color: #fff;
     }
   }
