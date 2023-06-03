@@ -14,8 +14,7 @@
   <title>Unilink Cargo</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <script src="https://unpkg.com/phosphor-icons"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css">
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -28,18 +27,55 @@
   <div class="main-container">
 
     <div class="home-banner">
-      <div class="banner-bg">
-        <img src="./img/banner-1.jpg" alt="">
-      </div>
-      <div class="container">
-        <div class="main-head">
-          <h1>
-            <span>MAKING</span>
-            <span>YOUR</span>
-            <span>SHIPPING</span>
-            <span>QUICK & EASY</span>
-          </h1>
+      <div class="banner-swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="banner-bg">
+              <img src="./img/banner-1.jpg" alt="">
+            </div>
+            <div class="container">
+              <div class="main-head">
+                <h1>
+                  <span>MAKING</span>
+                  <span>YOUR</span>
+                  <span>SHIPPING</span>
+                  <span>QUICK & EASY</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="banner-bg">
+              <img src="./img/banner-1.jpg" alt="">
+            </div>
+            <div class="container">
+              <div class="main-head">
+                <h1>
+                  <span>MAKING</span>
+                  <span>YOUR</span>
+                  <span>SHIPPING</span>
+                  <span>QUICK & EASY</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="banner-bg">
+              <img src="./img/banner-1.jpg" alt="">
+            </div>
+            <div class="container">
+              <div class="main-head">
+                <h1>
+                  <span>MAKING</span>
+                  <span>YOUR</span>
+                  <span>SHIPPING</span>
+                  <span>QUICK & EASY</span>
+                </h1>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
 
@@ -129,9 +165,75 @@
     <!-- Our Happy Customers -->
     <div class="comm-section">
       <div class="container">
-        <div class="happy-head">
-          <h3>Our <br />
-            Happy Customers</h3>
+        <div class="customers-wrap">
+          <div class="f-row">
+            <div class="w50">
+              <div class="happy-head">
+                <h3>Our <br />
+                  Happy Customers</h3>
+              </div>
+              <div class="customer-txt-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="customer-txt">
+                      <h3>Reliable & Top-Notch</h3>
+                      <p>"I've been using this shipping website for all of my business deliveries for the past year, and
+                        I couldn't be happier with the service. The rates are competitive, the tracking system is
+                        reliable, and the customer service is top-notch."</p>
+                      <h5>Christina Watts</h5>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="customer-txt">
+                      <h3>Reliable & Top-Notch</h3>
+                      <p>"I've been using this shipping website for all of my business deliveries for the past year, and
+                        I couldn't be happier with the service. The rates are competitive, the tracking system is
+                        reliable, and the customer service is top-notch."</p>
+                      <h5>Christina Watts</h5>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="customer-txt">
+                      <h3>Reliable & Top-Notch</h3>
+                      <p>"I've been using this shipping website for all of my business deliveries for the past year, and
+                        I couldn't be happier with the service. The rates are competitive, the tracking system is
+                        reliable, and the customer service is top-notch."</p>
+                      <h5>Christina Watts</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-nav">
+                  <div class="swiper-button-prev">
+                    <img src="./img/left-arrow.svg" alt="">
+                  </div>
+                  <div class="swiper-button-next">
+                    <img src="./img/right-arrow.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w50">
+              <div class="customer-img-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="customer-img">
+                      <img src="./img/customer-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="customer-img">
+                      <img src="./img/customer-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="customer-img">
+                      <img src="./img/customer-img.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -173,12 +275,19 @@
                     <div class="f-row">
                       <div class="w50">
                         <div class="form-grp">
-                          <input type="number" required class="form-input" placeholder="Enter Phone Number">
+                          <label for="" class="form-label">Country</label>
+                          <select class="form-input" name="" id="">
+                            <option selected disabled>Country</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>Russia</option>
+                          </select>
                         </div>
                       </div>
                       <div class="w50">
                         <div class="form-grp">
-                          <input type="number" required class="form-input" placeholder="Enter Phone Number">
+                          <label for="" class="form-label">Zip Code*</label>
+                          <input type="number" required class="form-input" placeholder="Zip Code*">
                         </div>
                       </div>
                     </div>
@@ -188,12 +297,19 @@
                     <div class="f-row">
                       <div class="w50">
                         <div class="form-grp">
-                          <input type="number" required class="form-input" placeholder="Enter Phone Number">
+                          <label for="" class="form-label">Country</label>
+                          <select class="form-input" name="" id="">
+                            <option selected disabled>Country</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>Russia</option>
+                          </select>
                         </div>
                       </div>
                       <div class="w50">
                         <div class="form-grp">
-                          <input type="number" required class="form-input" placeholder="Enter Phone Number">
+                          <label for="" class="form-label">Zip Code*</label>
+                          <input type="number" required class="form-input" placeholder="Zip Code*">
                         </div>
                       </div>
                     </div>
@@ -201,33 +317,50 @@
                   <div class="w50">
                     <p class="form-subtitle">Number of Boxes</p>
                     <div class="form-grp">
-                      <input type="number" required class="form-input" placeholder="Enter Phone Number">
+                      <select class="form-input">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                      </select>
                     </div>
                   </div>
                   <div class="w50">
-                    <p class="form-subtitle">Box Weight</p>
+                    <p class="form-subtitle">Total Box Weight</p>
                     <div class="form-grp">
-                      <input type="number" required class="form-input" placeholder="Enter Phone Number">
+                      <input type="number" required class="form-input" placeholder="0.1kg">
                     </div>
                   </div>
                   <div class="w100">
-                    <p class="form-subtitle">Box Weight</p>
-                    <div class="f-row">
-                      <div class="w33">
-                        <div class="form-grp">
-                          <input type="number" required class="form-input" placeholder="Enter Phone Number">
-                        </div>
-                      </div>
-                      <div class="w33">
-                        <div class="form-grp">
-                          <input type="number" required class="form-input" placeholder="Enter Phone Number">
-                        </div>
-                      </div>
-                      <div class="w33">
-                        <div class="form-grp">
-                          <input type="number" required class="form-input" placeholder="Enter Phone Number">
-                        </div>
-                      </div>
+                    <div class="form-grp">
+                      <p class="form-subtitle">Email*</p>
+                      <input type="email" required class="form-input" placeholder="Enter Phone Number">
                     </div>
                   </div>
                   <div class="w100">
@@ -254,8 +387,10 @@
   <!-- Footer Ends -->
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
   <script src="js/megamenu.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
 </body>
 
 </html>
