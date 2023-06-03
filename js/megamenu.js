@@ -125,6 +125,8 @@ $(document).on("click", ".js-nav-toggle", function (e) {
   let rt = window.innerWidth;
   let menuBtnX = $(".js-nav-toggle").offset().left
   console.log(rt, menuBtnX);
-  $(".js-nav-toggle").css("right", 0)   
+  $(".js-nav-toggle").css("right", 0)
   $(".show-menu .js-nav-toggle").css("right", -(rt - menuBtnX - 70))
 });
+
+
