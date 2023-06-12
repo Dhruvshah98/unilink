@@ -9,13 +9,13 @@ var testimonial = new Swiper(".customer-txt-swiper", {
     grabCursor: true
 });
 
-var testimonialImg = new Swiper(".customer-img-swiper", {
-    spaceBetween: 10,
-    slidesPerView: 1,
-    speed: 800,
-    grabCursor: true
+// var testimonialImg = new Swiper(".customer-img-swiper", {
+//     spaceBetween: 10,
+//     slidesPerView: 1,
+//     speed: 800,
+//     grabCursor: true
 
-});
+// });
 
 
 var bannerSwiper = new Swiper(".banner-swiper", {
@@ -36,6 +36,6 @@ var bannerSwiper = new Swiper(".banner-swiper", {
 
 
 
-testimonial.controller.control = testimonialImg
-testimonialImg.controller.control = testimonial
+// testimonial.controller.control = testimonialImg
+// testimonialImg.controller.control = testimonial
 
