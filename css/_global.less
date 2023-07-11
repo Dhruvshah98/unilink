@@ -7,6 +7,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   // -webkit-touch-callout: none;
   // -webkit-user-select: none;
   // -khtml-user-select: none;
@@ -239,6 +240,7 @@ body {
     line-height: 90px;
     letter-spacing: -0.02em;
     color: #000000;
+    text-align: center;
   }
   p {
     font-weight: 500;
@@ -246,6 +248,7 @@ body {
     line-height: 36px;
     color: #000000;
     margin-top: 32px;
+    text-align: center;
   }
 }
 
@@ -284,12 +287,14 @@ body {
     line-height: 1.6;
     color: #000000;
     margin-bottom: 30px;
+    text-align: center;
   }
   p {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.5;
     color: #000000;
+    text-align: center;
   }
   h5 {
     font-weight: 600;
@@ -297,6 +302,7 @@ body {
     line-height: 1.5;
     color: #000000;
     margin-top: 80px;
+    text-align: center;
   }
 }
 
@@ -499,5 +505,21 @@ body {
   padding-left: 16px;
   a {
     margin-bottom: 40px;
+  }
+}
+
+.home-banner {
+  height: calc(100vh - var(--header-height));
+}
+.banner-swiper {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  .swiper-slide {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
