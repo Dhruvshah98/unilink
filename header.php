@@ -44,7 +44,7 @@
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                         <div class="menuBtn">
-                            <a href="" class="button">Get Free Quote</a>
+                            <a href="<?php echo get_site_url() . '/contact/' ?>" class="button">Get Free Quote</a>
                             <div class="menu side-menu">
                                 <a href="javascript:void(0)" class="js-nav-toggle">
                                     <span></span>
@@ -78,37 +78,11 @@
                         </span>
                         <span class="nav-close"></span>
                     </div>
-
                     <ul>
-                        <li class="has-dropdown">
-                            <a href="javascript:void(0)">Services</a>
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/dd-1.svg"
-                                            alt="" />Sales Presentation</a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/dd-2.svg"
-                                            alt="" />Slides clean-up and redesign</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li><a href="#">Solutions</a></li>
-
-                        <li class="has-dropdown">
-                            <a href="javascript:void(0)">Other Services</a>
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/dd-10.svg"
-                                            alt="" />Website design and development </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/dd-11.svg"
-                                            alt="" />SEO services </a>
-                                </li>
-                            </ul>
-                        </li>
+                        <li><a href="<?php echo get_site_url() . '/' ?>">Home</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="<?php echo get_site_url() . '/about/' ?>">About </a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>

@@ -206,7 +206,7 @@ get_header();
     <div class="comm-section">
         <div class="container">
             <div class="f-row">
-                <div class="w50">
+                <div class="w50 w-1200-100">
                     <div class="happy-head">
                         <h3>
                             <?php the_field('free_quote_title'); ?>
@@ -214,7 +214,7 @@ get_header();
                         <p><?php the_field('free_quote_subtitle'); ?></p>
                     </div>
                 </div>
-                <div class="w50">
+                <div class="w50 w-1200-100">
                     <div class="quote-form">
                         <!-- <form action=""> -->
                         <!-- <div class="f-row">

@@ -1,4 +1,4 @@
-if ($(window).outerWidth() < 990) {
+if ($(window).outerWidth() < 1201) {
   this.MobileNav = function () {
     this.curItem,
       (this.curLevel = 0),
